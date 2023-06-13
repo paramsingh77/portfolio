@@ -85,15 +85,13 @@ ul {
 .nav-background:hover {
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 	/* box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; */
-	
 }
 
 .hover-link {
 	color: var(--primary-text-color);
 	cursor: pointer;
-		transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
-
 
 .hover-link:hover {
 	color: var(--hovering-text-color);
@@ -166,7 +164,7 @@ ul {
 
 .rightSide h1 {
 	margin-bottom: 20px;
-		transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
 
 .rightSide p {
@@ -176,7 +174,6 @@ ul {
 
 .rightSide h1:hover {
 	color: #e3b6b5;
-
 }
 
 .but {
@@ -228,7 +225,7 @@ ul {
 .skill-card {
 	gap: 30px;
 	padding: 20px 20px;
-		transition: 0.4s ease-in-out;
+	transition: 0.4s ease-in-out;
 }
 
 .skill-card:hover {
@@ -271,21 +268,30 @@ ul {
 }
 
 .una-logo {
-		width: 100%;
-		transform-origin:50% 50% ;
-			transition: 5.5s;
-			box-shadow: 0.4 0.4 0.4 black;
-			-webkit-filter: drop-shadow(5px 5px 5px #666666);
+	width: 100%;
+	transform-origin: 50% 50%;
+	transition: 5.5s;
+	box-shadow: 0.4 0.4 0.4 black;
+	-webkit-filter: drop-shadow(5px 5px 5px #666666);
 	filter: drop-shadow(5px 5px 5px #666666);
+	animation-name: circles;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
-.una-logo:hover {
+@keyframes circles {
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+/* .una-logo:hover {
 		transform: rotate(360deg);
 	
 		cursor: pointer;
-}
-	
-
+} */
 
 .major {
 	margin-top: 50px;
@@ -417,7 +423,7 @@ ul {
 	.quote-section p {
 		font-size: 20px;
 		color: var(--primary-text-color);
-        text-align: center;
+		text-align: center;
 	}
 
 	.container {
@@ -429,13 +435,12 @@ ul {
 		padding: 30px 40px 30px 30px;
 		align-content: center;
 		margin-right: 60px; */
-      
 	}
-    .my-image{
-       /* background-color: #000000; */
-       width: 100%;
-       margin: 50px 150px;
-    }
+	.my-image {
+		/* background-color: #000000; */
+		width: 100%;
+		margin: 50px 150px;
+	}
 	.rightSide {
 		width: 100%;
 		text-align: center;
@@ -528,30 +533,29 @@ ul {
 
 	.main-nav {
 		overflow: initial;
-        color: var(--secondary-text-color);
+		color: var(--secondary-text-color);
 	}
 
 	.nav-links {
 		position: absolute;
-        background-color: rgb(227, 227, 227);
-        color: #f7f7f7;
-        width: 100%;
-        top: 10%;
-        left: -100%;
-        z-index: 1 ;
-        text-align: center;
-        padding-block: 20px;
-        transition: 0.3s ease-in-out;
+		background-color: rgb(227, 227, 227);
+		color: #f7f7f7;
+		width: 100%;
+		top: 10%;
+		left: -100%;
+		z-index: 1;
+		text-align: center;
+		padding-block: 20px;
+		transition: 0.3s ease-in-out;
 	}
-    .nav-links.active{
-        left: 0;
-       border-radius: 10px;
-       padding: 30px;
-
-    }
+	.nav-links.active {
+		left: 0;
+		border-radius: 10px;
+		padding: 30px;
+	}
 
 	.nav-links ul {
 		flex-direction: column;
-        color: whitesmoke;
+		color: whitesmoke;
 	}
 }
