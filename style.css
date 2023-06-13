@@ -79,23 +79,25 @@ ul {
 	justify-content: space-between;
 	height: 80px;
 	font-weight: 600;
+	transition: 0.5s ease-in-out;
 }
 
 .nav-background:hover {
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 	/* box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; */
-	transition: 0.5s ease-in-out;
+	
 }
 
 .hover-link {
 	color: var(--primary-text-color);
 	cursor: pointer;
+		transition: 0.2s ease-in-out;
 }
+
 
 .hover-link:hover {
 	color: var(--hovering-text-color);
 	cursor: pointer;
-	transition: 0.2s ease-in-out;
 }
 .call {
 	/* align-items: center; */
@@ -164,6 +166,7 @@ ul {
 
 .rightSide h1 {
 	margin-bottom: 20px;
+		transition: 0.2s ease-in-out;
 }
 
 .rightSide p {
@@ -173,7 +176,7 @@ ul {
 
 .rightSide h1:hover {
 	color: #e3b6b5;
-	transition: 0.2s ease-in-out;
+
 }
 
 .but {
@@ -225,6 +228,7 @@ ul {
 .skill-card {
 	gap: 30px;
 	padding: 20px 20px;
+		transition: 0.4s ease-in-out;
 }
 
 .skill-card:hover {
@@ -232,7 +236,7 @@ ul {
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
 		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	transition: 0.4s ease-in-out;
+
 	border-radius: 15px;
 }
 
@@ -269,11 +273,15 @@ ul {
 .una-logo {
 		width: 100%;
 		transform-origin:50% 50% ;
+			transition: 5.5s;
+			box-shadow: 0.4 0.4 0.4 black;
+			-webkit-filter: drop-shadow(5px 5px 5px #666666);
+	filter: drop-shadow(5px 5px 5px #666666);
 }
 
 .una-logo:hover {
 		transform: rotate(360deg);
-		transition: 5.5s;
+	
 		cursor: pointer;
 }
 	
