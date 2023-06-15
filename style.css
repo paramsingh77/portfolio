@@ -8,6 +8,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	
+}
+
+body{
+	cursor: url('./assets/mouse-cursor-sticker\ \(1\).svg'),pointer;
 }
 
 :root {
@@ -17,6 +22,7 @@
 	--padding-inline-section: 20px;
 	--secondary-primary-color: black;
 	--hovering-text-color: #fc7233;
+
 }
 
 body {
@@ -436,7 +442,11 @@ ul {
 		align-content: center;
 		margin-right: 60px;
 	}
-	
+	/* .my-image {
+		/* background-color: #000000; */
+		/* width: 100%;
+		margin: 50px 150px; */
+	/* } */ 
 	.rightSide {
 		width: 100%;
 		text-align: center;
@@ -541,17 +551,25 @@ ul {
 		left: -100%;
 		z-index: 1;
 		text-align: center;
-		padding-block: 20px;
 		transition: 0.3s ease-in-out;
 	}
 	.nav-links.active {
 		left: 0;
 		border-radius: 10px;
-		padding: 30px;
+		padding: 0px;
+		border: 0.5px solid black;
+		
 	}
 
 	.nav-links ul {
 		flex-direction: column;
-		color: whitesmoke;
+		
 	}
+	.nav-links li{
+		border: 0.5px solid black;
+		padding : 0px 40px;
+	}
+
+
+
 }
