@@ -144,6 +144,7 @@ li{
 	height: 100px;
 	align-items: center;
 	padding-bottom: 15px;
+	mix-blend-mode: darken;
 }
 
 .log {
@@ -586,4 +587,53 @@ li{
 
 
 
+}
+
+.animated{
+	font-size: 2rem;
+	margin-block: 40px;
+}
+
+
+.animated::after{
+	content: 'Developer';
+	display: inline-block;
+	font-size: 2rem;
+	animation: animation 6.5s steps(9) infinite;
+	width: 0ch;
+	color: rgb(0, 0, 0);
+}
+
+.animated::before{
+	display: inline-block;
+	content: ' ';
+	width: 2px;
+	height: 100%;
+	background-color: whitesmoke;
+	position: absolute;
+	right: 0;
+	animation: blinking .4s linear alternate infinite;
+}
+
+@keyframes animation{
+	25%{
+		content: 'Developer';
+		width: 8.5ch;
+	}
+	40%{
+		width: 0ch;
+	}
+	75%{
+		content: 'Designer';
+		width: 7.5ch;
+	}
+	90%{
+		width: 0ch;
+	}
+}
+
+@keyframes blinking {
+	100%{
+		opacity: 0;
+	}
 }
