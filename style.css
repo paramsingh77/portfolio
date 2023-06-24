@@ -634,6 +634,6 @@ li{
 
 @keyframes blinking {
 	100%{
-		opacity: 1;
+		opacity: 0;
 	}
 }
