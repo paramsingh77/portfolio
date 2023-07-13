@@ -439,7 +439,7 @@ li{
     flex-basis: 730px;
 } */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 391px) {
 	/* About Section */
 	.quote-section p {
 		font-size: 12px;
@@ -583,7 +583,12 @@ li{
 		padding : 0px 40px;
 	}
 
-
+    .welcome-tag {
+        
+		 top: 20vh !important;
+		 font-size: 10px;
+		animation: welcome;
+	}
 
 }
 
@@ -619,19 +624,56 @@ li{
 		width: 8.5ch;
 	}
 	40%{
-		width: 0ch;
+		width: 8.5ch;
 	}
 	75%{
 		content: 'Designer';
-		width: 7.5ch;
+		width: 8.5ch;
 	}
 	90%{
-		width: 0ch;
+		width: 8.5ch;
 	}
 }
 
 @keyframes blinking {
 	100%{
 		opacity: 0;
+	}
+}
+
+
+.welcome-tag{
+	position: absolute;
+	top: 85vh;
+	padding: 20px;
+	background-color: black;
+	color: white;
+	left: -100%;
+	animation: welcome 10s ease-in-out 1;
+
+}
+
+.inactive{
+	margin-left: 20px;
+}
+
+@keyframes welcome {
+	0%{
+		left: -100%;
+	}
+
+	25%{
+		left: 0%;
+	}
+	50%{
+		left: 5%;
+	}
+
+	75%{
+		left: 0%;
+	}
+
+	100%{
+		left: -100%;
 	}
 }
